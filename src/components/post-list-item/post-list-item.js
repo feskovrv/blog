@@ -30,7 +30,6 @@ export default class PostListItem extends Component{
         if (like){
             className += ' like'
         }
-        console.log(this.state.label);
 
     return(
         <>
