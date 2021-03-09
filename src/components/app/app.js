@@ -39,7 +39,7 @@ export default class App extends Component{
     }
 
     onToggleImportant(id){
-        this.setState(({data}) =>{
+        this.setState(({data}) => {
             const index = data.findIndex(elem => elem.id === id);
             const old = data[index];
             const newItem = {...old, important: !old.important };
@@ -116,13 +116,6 @@ export default class App extends Component{
         })
     }
     filterPost(items, filter){
-/*        if (filter === 'like'){
-            return items.filter(item => item.like)
-        }
-        else{
-            if (filter === 'important')
-            return items
-        }*/
         switch (filter) {
             case 'like':
                 return items.filter(item => item.like)
@@ -140,6 +133,7 @@ export default class App extends Component{
     onFilterSelect(filter){
         this.setState({filter})
     }
+
 
     render() {
         const {data, term, filter} = this.state;

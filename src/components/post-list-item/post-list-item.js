@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './post-list-item.css'
 
-export default class  PostListItem extends Component{
+export default class PostListItem extends Component{
     render() {
         const {label, important, like, onDelete, onToggleLiked, onToggleImportant} = this.props;
         let className = 'app-list-item d-flex justify-content-between'

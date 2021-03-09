@@ -10,6 +10,7 @@ export default class PostAddForm extends Component {
         this.onValueChange = this.onValueChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
+
     onValueChange(e){
         this.setState({
             text: e.target.value
@@ -36,9 +37,9 @@ export default class PostAddForm extends Component {
                 />
                 <button
                     type="submit"
-                    className="btn btn-outline-secondary"
-                >
-                    Добавить</button>
+                    className="btn btn-outline-secondary">
+                    Добавить
+                </button>
             </form>
         )
     }
